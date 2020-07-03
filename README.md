@@ -32,3 +32,9 @@ Benötigte Werkzeuge
 * GNU make
 * LaTeX-Umgebung (tetex)
 * ggf. zusätzliche Tex-Packages
+
+
+Inhalt:
+-------
+
+* misc/         verschiedene includes (Bilder, etc)

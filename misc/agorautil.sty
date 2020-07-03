@@ -1,0 +1,50 @@
+\ProvidesPackage{agorautil}[2020/07/09 v 0.1 utils for agora docs]
+
+\newcommand\Agora@EditorialEmail{kontakt@agora-initiative.de}
+\newcommand\Agora@EditorialName{Johannes Harrer}
+\newcommand\Agora@EditorialAddrA{Rennesstra{\ss}e 41, W.-Nr. 805}
+\newcommand\Agora@EditorialAddrB{91054 Erlangen}
+\newcommand\Agora@EditorialTelegram{t.me/agorainitiative}
+\newcommand\Agora@EditorialPhone{+49 177 4892544}
+\newcommand\Agora@LogoPicture{agora-logo.jpg}
+
+\RequirePackage{graphicx}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{charter}
+
+\newcommand\AgoraFlyerTitlePage{
+\begin{titlepage}
+\thispagestyle{empty}
+
+\begin{center}
+\includegraphics{\Agora@LogoPicture}
+\end{center}
+
+\vfill
+
+
+\begin{tabular}{l}
+Telegram: \Agora@EditorialTelegram\\
+\\
+\\
+Impressum: \\
+V.i.S.d.P.: \Agora@EditorialName \\
+\Agora@EditorialAddrA \\
+\Agora@EditorialAddrB \\
+E-Mail: \Agora@EditorialEmail \\
+Telefon: \Agora@EditorialPhone \\
+\end{tabular}
+\end{titlepage}
+
+\newpage
+}
+
+\newcommand\WebLink[1]{#1}
+
+\newenvironment{Intro}{\bfseries}{\normalfont}
+\newcommand\Headline[1]{\begin{center}
+\large \bfseries
+#1
+\end{center}
+}
